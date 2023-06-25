@@ -1,191 +1,262 @@
 <!DOCTYPE html>
-<html><head>
-    <title>mq</title>
-    <link rel="icon" href="mq.jpg?" type="image/x-icon">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Dumb">
-  <meta property="og:description" content="mq#0222">
-  <meta property="og:image" content="http://cdn.heroin.cf/favicon.jpg">
-  <meta property="og:url" content="http://dumb.ga">
-  <meta property="og:url" content="http://dumb.gq">
-  <meta property="theme-color" content="#cab487">
-    <style>
-        /* Reset some default styles */
-        body, html {
-            height: 100%;
-            cursor: url("cursor.cur"), auto;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/global.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/css3.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/all.min.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/normalize.min.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/lib.min.min.css?t=1687099772">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/roboto.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/custom.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/ficons.min.css?t=1687551772">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/mobile.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/hovercards.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/alerts.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme3/fork-awesome.min.css?t=1685479075">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/cache/themes/theme1/latestposts.min.css?t=1686719538">
+<link type="text/css" rel="stylesheet" href="https://breachforums.vc/css.php?stylesheet%5B0%5D=44&amp;stylesheet%5B1%5D=20">
 
-        /* Header styles */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+<script type="text/javascript" src="https://breachforums.vc/jscripts/ougc_awards.js"></script><style type="text/css" id="operaUserStyle"></style>
 
-        header h1 {
-            margin: 0;
-        }
 
-        /* Set page background color */
-        body {
-            background-color: #333;
-        }
 
-        /* Profile styles */
-        .profile {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-            text-align: center;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        .profile h2 {
-            margin: 0;
-        }
-
-        .profile p {
-            margin: 10px 0;
-        }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            margin-right: 10px;
-            color: #333;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background-color: #00ff00;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-  /* Cursor styles */
-    body.custom-cursor {
-        cursor: none;
-    }
-
-    .custom-cursor {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 9999;
-    }
-
-    .custom-cursor img {
-        position: absolute;
-        pointer-events: none;
-    }
-    </style>
 </head>
 <body>
-<audio id="audioPlayer"></audio>
 
-<script>
-  // Define an array of audio file URLs
-  var audioFiles = [
-    'music.mp3',
-    'fake.mp3',
-    'one-time.mp3',
-    // Add more audio file URLs as needed
-  ];
+<div id="container">
+	<a name="top" id="top"></a>
+	<header>
+		
+			
+</header>
 
-  // Shuffle the audio file array
-  function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
-  }
-  
-  // Shuffle the audio files
-  var shuffledAudioFiles = shuffle(audioFiles);
-  
-  // Play the shuffled audio files in a loop
-  var currentIndex = 0;
-  
-  function playNextAudio() {
-    var audioPlayer = document.getElementById('audioPlayer');
-  
-    if (currentIndex >= shuffledAudioFiles.length) {
-      // Reached the end of the shuffled audio files, shuffle again
-      shuffledAudioFiles = shuffle(audioFiles);
-      currentIndex = 0;
-    }
-  
-    audioPlayer.src = shuffledAudioFiles[currentIndex];
-    audioPlayer.play();
-  
-    currentIndex++;
-  }
-  
-  // Play the next audio when the website loads
-  window.addEventListener('load', playNextAudio);
-  
-  // Play the next audio when the current audio ends
-  audioPlayer.addEventListener('ended', playNextAudio);
-</script>
+
+<main id="content" class="wrapper rounded-bottom" style="">
 
 
 
-    <header>
-        <p>&ZeroWidthSpace;</p>
-    </header>
-    <header>
-        <p>&ZeroWidthSpace;</p>
-    </header><header>
-        <p>&ZeroWidthSpace;</p>
-    </header><div class="profile">
-        <img src="mq.jpg" alt="Profile Picture">
-        <h2>mq</h2>
-        <p>mq</p>
-        <p>Location: Japan</p>
-        <div class="social-links">
-            <a href="https://eruptor.t.me">Telegram</a>
-            <a href="https://discord.com/users/1024824598757384202">Discord</a>
-            <a href="mailto:rro@live.com">Email</a>
-        </div>
-    </div>
-    
+<section id="profile">
+	<div class="profile__head tborder rounded">
+		<div class="profile__cover profile__cover--image">
+			<div class="profile__wrap">
+				<div class="profile__user">
+					<div class="profile__user-avatar">
+						
+<img src="https://breachforums.vc/uploads/avatars/avatar_1783.png?dateline=1687501110" class="modal_image" data-image-modal="https://breachforums.vc/uploads/avatars/avatar_1783.png?dateline=1687501110" alt="" height="78" style="margin-top: -10px">
+
+					</div>
+					<div class="profile__user-basic-info">
+						<span class="profile__username"><span class="rf_noob">Orpheus</span></span>
+						<div class="profile__user-title smalltext">Breached </div>
+					</div>
+				</div>
+					
+				<div class="socialsites socialsites--profile rounded hidden-sm">
+					
+
+<span class="socialsites__icon">
+<a href="https://t.me/doghumper" title="Orpheus on Telegram" rel="nofollow" target="_blank">
+		<i class="fab fa-telegram" style="color: #2AABEE;"></i>
+</a>
+</span>
 
 
+				</div>
+
+			</div>
+
+		</div>
+		<div class="profile__sub-info">
+			<div class="profile__wrap">
+				<div class="profile__online-status">
+					Status:<span>
+<span class="offline" style="font-weight: bold;">Offline</span>
+(Last Visit: <span title="06-25-2023, 01:26 AM">Less than 1 minute ago</span>)</span>
+				</div>
+				<ul class="profile__buddy-options nav">
+					<!--<li></li>-->
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+</div>
+	
+	<div class="profile__content">
+		<div class="profile__short-info">
+			<table class="tborder" cellspacing="0" cellpadding="5" border="0">
+				<tbody>
+					<tr>
+						<td class="thead">
+							<strong>Orpheus's Forum Info</strong>
+						</td>
+					</tr>
+					<tr>
+						<td class="trow1" align="center">
+							
+<img src="resources/ranks/member.png" alt="Breached " title="Breached "><br>
+
+						</td>
+					</tr>
+					<tr>
+						<td class="trow1">
+							<span class="profile__info-type">Joined:</span>06-14-2023
+						</td>
+					</tr>
+					<tr>
+						<td class="trow1">
+							<span class="profile__info-type">Time Spent Online:</span>19 Hours, 13 Minutes, 41 Seconds
+						</td>
+					</tr>
+					<tr>
+						<td class="trow1">
+							<span class="profile__info-type">User Identifier:</span>1783 [<a href="https://breachforums.vc/member?action=profile&amp;uid=1783" onclick="copyToClipboard($(this).attr('href')); return false;">Copy Profile Permalink</a>]
+						</td>
+					</tr>
+					 
+					
+
+
+	<tr><td class="trow2"><span class="profile__info-type">Members Referred:</span>
+		<a href="/member.php?action=register&amp;referrer=1783" id="referrer_1783" class="referralLink">
+</a><a href="https://breachforums.vc/member.php?action=referrals&amp;uid=1783" id="referrer_1783" class="referralLink">1</a>
+
+	</td>
+
+</tr>
+
+				</tbody>
+			</table>
+		<br>
+		
+<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed">
+<colgroup>
+<col style="width: 30%;">
+</colgroup>
+<tbody><tr>
+<td colspan="2" class="thead"><strong>Additional Info About Orpheus</strong></td>
+</tr>
+
+<tr>
+<td class="trow1"><strong>Location:</strong></td>
+<td class="trow1 scaleimages">Japan</td>
+</tr>
+
+<tr>
+<td class="trow2"><strong>Gender:</strong></td>
+<td class="trow2 scaleimages">Male</td>
+</tr>
+
+</tbody></table>
+<br>
+
+		
+		
+
+
+<br>
+</div>
+<div class="profile__main-info">
+
+<table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed">
+	<colgroup>
+	<col style="width: 30%;">
+	</colgroup>
+	<tbody><tr>
+		<td colspan="2" class="thead"><strong>Orpheus's Contact Details</strong></td>
+	</tr>
+	
+<tr>
+	<td class="trow1"><strong>Homepage:</strong></td>
+	<td class="trow1"><a href="http://heroin.gg" target="_blank" rel="noopener">http://heroin.gg</a></td>
+</tr>
+
+	
+	
+	
+	
+</tbody></table>
+<br>
+
+<table class="tborder" cellspacing="0" cellpadding="5" border="0">
+<tbody><tr>
+<td class="thead"><strong>Orpheus's Forum Statistics</strong></td>
+</tr>
+<tr>
+<td class="trow1">
+<div class="d-table w-100">
+<div class="d-table-cell w-100">
+<span class="profile__info-type">Total Threads:</span>
+10 (0.96 threads per day | 0.29 percent of total threads)
+</div>
+<div class="d-table-cell align-middle text-nowrap">
+<a href="search?action=finduserthreads&amp;uid=1783"><i class="fas fa-search fa-fw"></i> Find All Threads</a>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="trow1">
+<div class="d-table w-100">
+<div class="d-table-cell w-100">
+<span class="profile__info-type">Total Posts:</span>
+46 (4.43 posts per day | 0.2 percent of total posts)
+</div>
+<div class="d-table-cell align-middle text-nowrap">
+<a href="search?action=finduser&amp;uid=1783"><i class="fas fa-search fa-fw"></i> Find All Posts</a>
+</div>
+</div>
+</td>
+</tr>
+	
+<tr>
+<td class="trow1">
+<div class="d-table w-100">
+<div class="d-table-cell w-100">
+<span class="profile__info-type">Reputation:</span>
+<strong>
+<strong class="reputation_positive">30</strong>
+</strong>
+</div>
+<div class="d-table-cell align-middle text-nowrap">
+<a href="/reputation.php?uid=1783"><i class="fas fa-info-circle fa-fw"></i> Details</a>&nbsp;&nbsp;
+</div>
+</div>
+</td>
+</tr>
+
+</tbody></table>
+<br>
+
+
+<br>
+
+</div>
+<div class="profile__activity">
+
+<t<tr>
+	</t<tr><table border="0" cellspacing="0" cellpadding="5" class="tborder tfixed">
+	<tbody><tr>
+		<td class="thead"><strong>Orpheus's awards.</strong></td>
+	</tr>
+	
+<tr>
+	<td class="trow1">
+		<span class="float_right smalltext">06-23-2023 <i>at</i> 03:24 AM</span>
+<a href="https://breachforums.vc/awards.php?view=17" title="Weeb"><img src="https://breachforums.vc/resources/awards/weeaboo.png" alt="Weeb"></a>
+	</td>
+</tr>
+<tr>
+	<td class="trow2">
+		<span class="float_right smalltext">06-23-2023 <i>at</i> 03:17 AM</span>
+<a href="https://breachforums.vc/awards.php?view=18" title="Web Developer"><img src="https://breachforums.vc/resources/awards/webdev.png" alt="Web Developer"></a>
+	</td>
+</tr>
+<tr><td class="tfoot"></td>
+</tr>
+</tbody></table>
+<br>
+<br>
+</div>
+</div>
+</section>
+	</main></div>
 </body></html>
